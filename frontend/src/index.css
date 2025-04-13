@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jersey+20&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    @apply font-primary
+}
+
+.wd-button{
+    @apply  rounded-md px-4 py-2 bg-primary/50 text-white hover:bg-primary/20 transition-all 
+}
+
+.wd-input[type=search]{
+    @apply bg-background-secondary px-4 rounded-md py-2 w-full text-foreground outline-none
+}
+
+
+.wd-input , .wd-input:autofill , select{
+    @apply py-2 rounded-md bg-background-primary/10 px-4 outline-none w-full
+}
+
+select option{
+    @apply bg-background-primary/50 outline-none
+}
+
+.wd-heading{
+    @apply text-primary text-3xl font-heading;
+}
+
+.wd-error-button{
+    @apply  rounded-md px-4 py-2 bg-red-600/50 text-white hover:bg-red-600/20 transition-all 
+}
+
+.wd-success-button{
+    @apply  rounded-md px-4 py-2 bg-emerald-600/50 text-white hover:bg-emerald-600/20 transition-all 
+}
